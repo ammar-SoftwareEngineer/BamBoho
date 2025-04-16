@@ -1,0 +1,275 @@
+:root {
+  --main-color: #b69e85;
+  --second-color: #000000;
+  --third-color: #ffffff;
+  --fourth-color: #e4d1b9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Almarai", sans-serif;
+  font-size: 1.2rem;
+  overflow-x: hidden;
+}
+
+.text-xl{
+  font-size: 8rem;
+}
+.text-lg {
+  font-size: 3rem;
+}
+.text-md {
+  font-size: 2.2rem;
+}
+.text-sm {
+  font-size: 1.5rem;
+}
+.lang-btn {
+  background-color: var(--main-color);
+  color: white !important;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+.btn-send {
+  background-color: var(--main-color);
+  color: var(--third-color);
+  padding: 1rem 3rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 18px;
+}
+.btn-send:hover {
+  background-color: var(--fourth-color);
+  color: var(--third-color);
+}
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+  display: inline-block;
+  width: fit-content !important;
+  padding-bottom: 4px; /* مساحة للخط */
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #c5a882, #a17856, #000000);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.lang-btn:hover {
+  background-color: var(--second-color);
+}
+
+/* Social icon  */
+.social-icon {
+  transition: all 0.5s;
+}
+.social-icon a {
+  background-color: var(--main-color);
+  color: var(--third-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+.social-icon a:hover {
+  background-color: var(--second-color);
+  color: var(--third-color);
+  transform: scale(1.1);
+}
+
+/* hero-slide */
+.hero-slider {
+  height: 85vh;
+  overflow: hidden;
+}
+.hero-slider .hero-slider-content {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  z-index: 2;
+  padding: 0 20px;
+}
+.hero-slider .text-slider {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  z-index: 2 !important;
+  transform: translate(-50%, -50%) !important;
+}
+.hero-slider .text-slider h1 {
+  font-size: 4rem;
+  color: var(--third-color) !important;
+  font-weight: bold !important;
+}
+
+.hero-slider .item {
+  position: relative;
+  height: 90vh;
+}
+
+.owl-carousel {
+  transition: all 0.3s;
+  position: relative;
+}
+.hero-slider .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.hero-slider .hero-slider-content {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  z-index: 2;
+  color: white;
+
+  margin: 0px 120px;
+  transition: all 0.5s;
+}
+.hero-slider .hero-slider-content h1 {
+  color: var(--third-color);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.hero-slider .hero-slider-content p {
+  line-height: 1.8;
+  font-size: 1.4rem;
+  width: 38rem;
+}
+.hero-slider .hero-slider-content .btn-about {
+  background-color: var(--main-color);
+  color: var(--third-color);
+  padding: 0.5rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+.hero-slider .hero-slider-content .btn-about:hover {
+  background-color: var(--fourth-color);
+}
+
+.owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel .owl-dots button.active span {
+  background-color: var(--main-color) !important;
+}
+.owl-carousel .owl-dots button span {
+  background-color: var(--third-color) !important;
+}
+
+.owl-carousel .owl-nav {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding: 0 10px;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.owl-carousel:hover .owl-nav {
+  transition: all 0.3s;
+}
+.owl-carousel .owl-nav .owl-prev {
+  color: var(--main-color);
+  background-color: var(--fourth-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: -50px;
+}
+.owl-carousel:hover .owl-nav .owl-prev {
+  transition: all 0.3s;
+  margin-left: 0px;
+}
+.owl-carousel .owl-nav .owl-prev:hover {
+  background-color: var(--third-color);
+  color: var(--main-color);
+  transform: scale(1.1);
+}
+.owl-carousel .owl-nav .owl-next {
+  color: var(--main-color);
+  background-color: var(--main-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: -50px;
+  margin-top: 0px;
+}
+.owl-carousel:hover .owl-nav .owl-next {
+  transition: all 0.3s;
+  margin-right: 0px;
+}
+.owl-carousel .owl-nav .owl-next:hover {
+  background-color: var(--third-color);
+  color: var(--main-color) !important;
+  transform: scale(1.1);
+}
+.owl-carousel .owl-nav .owl-prev > span,
+.owl-carousel .owl-nav .owl-next > span {
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: var(--third-color);
+}
+.owl-carousel .owl-nav .owl-prev:hover:hover > span,
+.owl-carousel .owl-nav .owl-next:hover > span {
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: var(--main-color);
+}
+.owl-carousel .owl-nav .owl-prev > span {
+  margin-right: 2px;
+}
+
+.owl-carousel .owl-nav .owl-next > span {
+  margin-left: 2px;
+}
