@@ -31,3 +31,18 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
+
+
+const navbar = document.querySelector(".navbar");
+const dropdowns = document.querySelectorAll(".nav-item.dropdown");
+
+dropdowns.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    navbar.style.height = "60%"; // أو أي ارتفاع يناسب القائمة
+  });
+
+  item.addEventListener("mouseleave", () => {
+    navbar.style.height = "100px"; // يرجع للارتفاع الأساسي
+  });
+});
+

@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
       rel="stylesheet"
     />
 
@@ -27,13 +27,15 @@
     <div class="home">
       <!-- Header/Navbar -->
       <header class="position-relative z-3">
-        <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <nav
+          class="navbar navbar-expand-lg d-flex align-content-start align-items-start shadow-sm"
+        >
           <div class="container">
             <!-- الشعار -->
-            <a class="navbar-brand" href="#">
-              <img src="images/logo.jpg" width="80" height="80" alt="BamBoho" />
+            <a class="navbar-brand" href="./index.html">
+              <img src="images/logo.jpg" width=75" height="75" alt="BamBoho" />
             </a>
-        
+
             <!-- زر القائمة للموبايل -->
             <button
               class="navbar-toggler shadow-none border-0"
@@ -44,18 +46,49 @@
             >
               <i class="fa-solid fa-bars fs-3"></i>
             </button>
-        
+
             <!-- قائمة أفقية في الشاشات الكبيرة -->
-            <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between align-items-center w-100">
+            <div
+              class="collapse navbar-collapse d-none d-lg-flex justify-content-between align-items-center w-100"
+            >
               <ul class="navbar-nav mx-auto d-flex gap-4 align-items-center">
                 <li class="nav-item">
                   <a class="nav-link active" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/assets/about.html">About Us</a>
+                  <a class="nav-link" href="./assets/about.html">About Us</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/assets/services.html">Services</a>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle-menu"
+                    href="./assets/services.html"
+                    >Services</a
+                  >
+                  <div class="dropdown-menu-list">
+                    <div class="row flex-nowrap justify-content-center align-items-center mt-5">
+                      <div class="col-6 w-100">
+                        <a class="dropdown-item d-block w-100" href="#"
+                          >Service 1</a
+                        >
+                      </div>
+                      <div class="col-6 w-100">
+                        <a class="dropdown-item d-block w-100" href="#"
+                          >Service 2</a
+                        >
+                      </div>
+                      <div class="col-6 w-100">
+                        <a class="dropdown-item d-block w-100" href="#"
+                          >Service 3</a
+                        >
+                      </div>
+                      <div class="col-6 w-100">
+                        <a class="dropdown-item d-block w-100" href="#"
+                          >Service 4</a
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/assets/blog.html">Blog</a>
@@ -64,9 +97,11 @@
                   <a class="nav-link" href="/assets/contact.html">Contact Us</a>
                 </li>
               </ul>
-              <a class="lang-btn btn btn-warning text-white px-3" href="#">AR</a>
+              <a class="lang-btn btn btn-warning text-white px-3" href="#"
+                >AR</a
+              >
             </div>
-        
+
             <!-- قائمة جانبية للموبايل -->
             <div
               class="offcanvas offcanvas-end d-lg-none"
@@ -89,12 +124,13 @@
                 <a class="nav-link" href="/assets/services.html">Services</a>
                 <a class="nav-link" href="/assets/blog.html">Blog</a>
                 <a class="nav-link" href="/assets/contact.html">Contact Us</a>
-                <a class="btn btn-send text-white px-3 py-2 mt-3" href="#">AR</a>
+                <a class="btn btn-send text-white px-3 py-2 mt-3" href="#"
+                  >AR</a
+                >
               </div>
             </div>
           </div>
         </nav>
-        
       </header>
 
       <!-- Fullscreen Carousel (behind navbar) -->
@@ -104,18 +140,18 @@
           data-aos="fade-down"
           data-aos-duration="1500"
         >
-          <h1
-            data-aos-anchor-placement="center-center"
-            class=""
-          >
+          <h1 data-aos-anchor-placement="center-center" class="">
             <span class="fw-medium text-lg text-capitalize">Welcome to</span>
-            <span class="fw-bolder !text-xl"> BamBoho</span>
+            <span class="fw-bolder !text-xl">BamBoho</span>
           </h1>
           <p class="mt-4">
             At our store, we offer an extensive selection of high-quality
             furniture pieces that are not only stylish but also built to last.
           </p>
-          <a href="/assets/about.html" target="_blank" class="btn btn-about mt-3"
+          <a
+            href="/assets/about.html"
+            target="_blank"
+            class="btn btn-about mt-3"
             >About us</a
           >
         </div>
@@ -150,7 +186,46 @@
         </div>
       </div>
     </div>
+<!-- ################################################################## -->
+<section class="py-5 text-center"  >
+  <div class="container">
+    <h2 class="mb-5 fw-bold " data-aos="fade-up" >Our Featured Products</h2>
+    <div class="row justify-content-center g-4" data-aos="fade-up" data-aos-duration="1500">
+      
+      <!-- Product 1 -->
+      <div class="col-md-4" >
+        <div class="product-card">
+          <img src="./images/slider1.jpg" alt="Lounge Chair" class="img-fluid product-img">
+         
+          <h5 class="fw-semibold">Lounge Chair</h5>
+          
+        </div>
+      </div>
 
+      <!-- Product 2 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="./images/slider2.jpg" alt="Table Light" class="img-fluid product-img">
+        
+          <h5 class="fw-semibold">Transitional Table Light</h5>
+          
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="./images/slider3.jpg" alt="Clock" class="img-fluid product-img">
+        
+          <h5 class="fw-semibold">Zolve Alarm Clock</h5>
+         
+        
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
     <!-- ############################################################## -->
     <!-- Social Icons -->
     <div
@@ -198,7 +273,10 @@
     <script src="js/main.js"></script>
     <!-- Initialize AOS -->
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 800,
+        easing: "slide",
+      });
     </script>
   </body>
 </html>
