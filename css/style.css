@@ -235,7 +235,17 @@ body {
 .hero-slider .hero-slider-content .btn-about:hover {
   background-color: var(--fourth-color);
 }
+.title-text{
+  line-height: 1.6;
+}
+.title-text span:nth-child(1) {
+  font-size: 2.5rem;
 
+}
+.title-text span:nth-child(2) {
+  font-size: 3.5rem;
+
+}
 .owl-carousel .owl-dots {
   position: absolute;
   bottom: 10px;
