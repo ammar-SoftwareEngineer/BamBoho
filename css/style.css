@@ -58,7 +58,16 @@ body {
 .text-primary-two {
   color: var(--main-color) !important;
 }
-
+.transparent-text {
+  font-size: 45px;
+  font-weight: bold;
+  background-image: url('../images/wooden-natural-floor-decoration-concept.jpg'); /* نفس الصورة */
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 /* navbar */
 .navbar {
   background-color: var(--third-color);
