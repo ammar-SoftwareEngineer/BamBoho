@@ -180,7 +180,9 @@ body {
   min-height: 100vh;
 
 }
-
+.hero-slider-pages{
+min-height: 100%;
+}
 .hero-slider .hero-slider-content {
   position: absolute;
   top: 50%;
