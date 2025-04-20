@@ -71,12 +71,9 @@ body {
 /* navbar */
 .navbar {
   background-color: var(--third-color);
-  position: fixed;
+
   width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  /* height: 100px; */
+
   overflow: hidden;
   transition: height 0.3s ease-in-out;
 }
@@ -213,7 +210,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
 .hero-slider .hero-slider-content {
