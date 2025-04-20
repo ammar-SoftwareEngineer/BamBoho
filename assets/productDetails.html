@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/logo.jpg" type="image/x-icon" />
+    <!-- css files -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product Details</title>
+  </head>
+  <body>
+    <div class="home">
+      <!-- Header/Navbar -->
+      <header class="position-relative z-3">
+        <nav
+          class="navbar navbar-expand-lg bg-white shadow-sm d-flex align-content-start align-items-start shadow-sm"
+        >
+          <div class="container">
+            <!-- الشعار -->
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../images/logo.jpg"
+                width="75"
+                height="75"
+                alt="BamBoho"
+              />
+            </a>
+
+            <!-- زر القائمة للموبايل -->
+            <button
+              class="navbar-toggler shadow-none border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
+            >
+              <i class="fa-solid fa-bars fs-3"></i>
+            </button>
+
+            <!-- قائمة أفقية في الشاشات الكبيرة -->
+            <div
+              class="collapse navbar-collapse d-none d-lg-flex justify-content-between align-items-center w-100"
+            >
+              <ul class="navbar-nav mx-auto d-flex gap-4 align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./services.html">Services</a>
+                  </li>
+                <li>
+                  <a class="nav-link" href="./ourProducts.html"
+                    >Products</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact Us</a>
+                </li>
+              </ul>
+              <a class="lang-btn btn btn-warning text-white px-3" href="#"
+                >AR</a
+              >
+            </div>
+
+            <!-- قائمة جانبية للموبايل -->
+            <div
+              class="offcanvas offcanvas-end d-lg-none"
+              tabindex="-1"
+              id="mobileMenu"
+              aria-labelledby="mobileMenuLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column gap-3">
+                <a class="nav-link active" href="../index.html">Home</a>
+                <a class="nav-link" href="./about.html">About Us</a>
+                <a class="nav-link" href="./services.html">Services</a>
+                <a class="nav-link" href="./ourProducts.html"
+                  >Products</a
+                >
+                <a class="nav-link" href="./blog.html">Blog</a>
+                <a class="nav-link" href="./contact.html">Contact Us</a>
+                <a class="btn btn-send text-white px-3 py-2 mt-3" href="#"
+                  >AR</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="hero-slider hero-slider-contact position-relative">
+        <div class="text-slider" data-aos="fade-right">
+          <h1 class="text-md">Product Details </h1>
+
+          <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb d-flex justify-content-center align-items-center text-white mt-4">
+              <li class="breadcrumb-item fs-3 "><a href="../index.html" class="text-white-50 fw-bold text-decoration-none">Home</a></li>
+              <li class="breadcrumb-item active fs-3 text-white" aria-current="page">
+                Product Details
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div>
+          <div class="overlay"></div>
+          <img
+            src="../images/2.jpg"
+            class="!object-fit-fill vw-100 vh-100"
+            alt="contact image"
+          />
+        </div>
+      </div>
+    </div>
+    <section class="py-5 ">
+        <div class="container py-5" data-aos="fade-up">
+            <h5 class="fw-bold fs-1 mb-5">Lounge Chair</h5>
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-tabs border-0 mb-4" id="productTab" role="tablist" >
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">Description</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Reviews</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ship-tab" data-bs-toggle="tab" data-bs-target="#shipping" type="button" role="tab">Shipping Policy</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="size-tab" data-bs-toggle="tab" data-bs-target="#sizechart" type="button" role="tab">Size Chart</button>
+              </li>
+            </ul>
+          
+            <!-- Tab Content -->
+            <div class="tab-content" id="productTabContent">
+              <div class="tab-pane fade show active" id="description" role="tabpanel">
+                <p class="mb-3">
+                  Quis autem vel eum iure reprehenderit qui inea voluptate velit esse quam nihil molestiae consequaurevel illum qui dolorem eu fugiat quo voluptas nulla pariatur minima veniam aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eugiat nulla pariatur exercitationem ullam coruoris.
+                </p>
+                <p>
+                  Vero eos accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                </p>
+          
+                <!-- Info + Image Row -->
+                <div class="row mt-4">
+                  <!-- Product Info -->
+                  <div class="col-md-6 ">
+                    <div class="product-info-box ">
+                      <p><h6>Weight:</h6> 25 Kg</p>
+                      <p><h6>Dimensions:</h6> 5 ft w, 6 ft h</p>
+                      <p><h6>Colors:</h6> Red, Black, White</p>
+                      <p><h6>Size:</h6> Large, Medium, Small</p>
+                    </div>
+                  </div>
+                  <!-- Image -->
+                  <div class="col-md-6">
+                    <img src="../images/product6.jpg" alt="Chair" class="img-fluid rounded shadow-sm">
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Empty tab contents for demo -->
+              <div class="tab-pane fade" id="reviews" role="tabpanel">
+                <p>No reviews yet.</p>
+              </div>
+              <div class="tab-pane fade" id="shipping" role="tabpanel">
+                <p>Shipping policy content here.</p>
+              </div>
+              <div class="tab-pane fade" id="sizechart" role="tabpanel">
+                <p>Size chart content here.</p>
+              </div>
+            </div>
+          </div>
+          
+      </section>
+          <!-- ############################################################## -->
+                  <!-- ############################################################## -->
+                  <footer class="bg-black text-white py-5">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <div class="widget mt-0">
+                            <img
+                              src="../images/logo dark.jpg"
+                              class="object-fit-cover"
+                              width="150"
+                              height="150"
+                              alt=""
+                            />
+                          </div>
+                          <div class="widget mt-3">
+                            <h3>About</h3>
+                            <p class="w-75">
+                              It is a medical company based on the operation of the medical
+                              facility and governmental and private hospitals.
+                            </p>
+                          </div>
+              
+                          <!-- /.widget -->
+                        </div>
+                        <!-- /.col-lg-3 -->
+              
+                        <div class="col-lg-3 ml-auto">
+                          <div class="widget">
+                            <h3>Site sections</h3>
+                            <ul class="list-unstyled float-left links">
+                              <li><a href="index.html">Home</a></li>
+                              <li>
+                                <a href="./about.html">About Us</a>
+                              </li>
+                              <li>
+                                <a href="./services.html">Services</a>
+                              </li>
+                              <li>
+                                <a href="./ourProducts.html">Products</a>
+                              </li>
+                              <li><a href="./blog.html">Blog</a></li>
+                              <li>
+                                <a href="./contact.html">Contact Us</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- /.widget -->
+                        </div>
+                        <!-- /.col-lg-3 -->
+              
+                        <div class="col-lg-4">
+                          <div class="widget">
+                            <h3>Contact</h3>
+                            <address class="!fs-5">
+                              فيلل القرنفل, Second New Cairo, Cairo Governorate 4752124
+                            </address>
+                            <!-- <address>فيلل القرنفل, Second New Cairo, Cairo Governorate 4752124</address> -->
+                            <ul class="list-unstyled links mb-4 fs-5">
+                              <li><a href="tel://+201555199540">+201555199540</a></li>
+                            </ul>
+                            <div class="widget mt-5">
+                              <h3>Connect with us</h3>
+                              <ul
+                                class="list-unstyled social d-flex align-items-center gap-3 mt-4"
+                              >
+                                <li>
+                                  <a
+                                    href="https://www.instagram.com/bambohoegy?igsh=emlpbXNvN2xwMXY2&utm_source=qr"
+                                    ><i class="fa-brands fa-instagram fs-4"></i
+                                  ></a>
+                                </li>
+              
+                                <li>
+                                  <a href="https://www.facebook.com/bambohoegy"
+                                    ><i class="fa-brands fa-facebook fs-4"></i
+                                  ></a>
+                                </li>
+              
+                                <li>
+                                  <a href="http://wa.me/201555199540" target="_blank"
+                                    ><i class="fa-brands fa-whatsapp fs-4"></i
+                                  ></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!-- /.widget -->
+                        </div>
+                        <!-- /.col-lg-3 -->
+                      </div>
+                      <!-- /.row -->
+              
+                      <div class="row mt-5">
+                        <div class="col-12 text-center">
+                          <p>
+                            Copyright &copy;
+                            <script>
+                              document.write(new Date().getFullYear());
+                            </script>
+                            . All Rights Reserved. &mdash; Be Group
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.container -->
+                  </footer>
+    <!-- Social Icons -->
+    <div
+    class="social-icon position-fixed start-0 bottom-0 mb-3 ms-3 d-flex flex-column gap-2 z-3"
+    data-aos="fade-right"
+  >
+    <a
+      href="tel:+201555199540"
+      class="btn btn-primary d-flex align-items-center justify-content-center rounded-3"
+      style="width: 40px; height: 40px"
+    >
+      <i class="fas fa-phone text-white"></i>
+    </a>
+    <a
+      href="https://www.facebook.com/bambohoegy"
+      target="_blank"
+      class="btn btn-primary d-flex align-items-center justify-content-center rounded-3"
+      style="width: 40px; height: 40px"
+    >
+      <i class="fab fa-facebook-f text-white"></i>
+    </a>
+    <a
+      class="btn btn-primary d-flex align-items-center justify-content-center rounded-3"
+      style="width: 40px; height: 40px"
+      href="https://www.instagram.com/bambohoegy?igsh=emlpbXNvN2xwMXY2&utm_source=qr"
+      target="_blank"
+    >
+      <i class="fab fa-instagram text-white"></i>
+    </a>
+    <a
+      href="http://wa.me/201555199540"
+      target="_blank"
+      class="btn btn-primary d-flex align-items-center justify-content-center rounded-3"
+      style="width: 40px; height: 40px"
+    >
+      <i class="fab fa-whatsapp text-white"></i>
+    </a>
+  </div>
+    <!-- ######################################## -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "slide",
+      });
+    </script>
+  </body>
+</html>
