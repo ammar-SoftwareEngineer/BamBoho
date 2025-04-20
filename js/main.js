@@ -59,7 +59,7 @@ owl.owlCarousel({
       dots: true // تظهر dots في الشاشات الكبيرة فقط
     },
     1200: {
-      items: 4,
+      items: 3,
       nav: false,
       dots: true 
     }
@@ -76,16 +76,16 @@ $('.stop').on('click', function () {
 
 
 
-const navbar = document.querySelector(".navbar");
-const dropdowns = document.querySelectorAll(".nav-item.dropdown");
+// const navbar = document.querySelector(".navbar");
+// const dropdowns = document.querySelectorAll(".nav-item.dropdown");
 
-dropdowns.forEach((item) => {
-  item.addEventListener("mouseenter", () => {
-    navbar.style.height = "60%";
-  });
+// dropdowns.forEach((item) => {
+//   item.addEventListener("mouseenter", () => {
+//     navbar.style.height = "60%";
+//   });
 
-  item.addEventListener("mouseleave", () => {
-    navbar.style.height = "100px"; 
-  });
-});
+//   item.addEventListener("mouseleave", () => {
+//     navbar.style.height = "100px"; 
+//   });
+// });
 

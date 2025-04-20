@@ -11,7 +11,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -61,7 +61,7 @@ body {
 .transparent-text {
   font-size: 45px;
   font-weight: bold;
-  background-image: url('../images/wooden-natural-floor-decoration-concept.jpg'); /* نفس الصورة */
+  background-image: url("../images/wooden-natural-floor-decoration-concept.jpg"); /* نفس الصورة */
   background-size: cover;
   background-position: center;
   color: transparent;
@@ -76,7 +76,7 @@ body {
   top: 0;
   left: 0;
   z-index: 9999;
-  height: 100px;
+  /* height: 100px; */
   overflow: hidden;
   transition: height 0.3s ease-in-out;
 }
@@ -88,7 +88,7 @@ body {
 .nav-link {
   position: relative;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #333;
   transition: color 0.3s ease-in-out;
   padding: 8px 12px;
@@ -178,10 +178,9 @@ body {
 /* hero-slide */
 .hero-slider {
   min-height: 100vh;
-
 }
-.hero-slider-pages{
-min-height: 100%;
+.hero-slider-pages {
+  min-height: 100%;
 }
 .hero-slider .hero-slider-content {
   position: absolute;
@@ -390,9 +389,9 @@ min-height: 100%;
 .product  .owl-dots button span {
   background-color: var(--third-color) !important;
 } */
- .product .item{
+.product .item {
   padding: 10px;
- }
+}
 .product-card {
   background-color: var(--third-color);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -408,7 +407,7 @@ min-height: 100%;
 .product-img {
   object-fit: cover !important;
   width: 100%;
-  height: 250px;
+  height: 450px;
   border-radius: 10px 10px 0 0;
 }
 .product-card h5 {
@@ -417,7 +416,7 @@ min-height: 100%;
 
 /*  */
 .nav-tabs .nav-link.active {
-  color:var(--main-color);
+  color: var(--main-color);
   border-color: transparent transparent var(--main-color) transparent;
   font-weight: bold;
 }
@@ -428,13 +427,67 @@ min-height: 100%;
   border: 1px solid #f1f1f1;
   padding: 25px;
   border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 .product-info-box h6 {
   font-weight: bold;
 }
 .tab-content img {
-height: 350px;
-width: 100%;
-object-fit: cover;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+/*  */
+.hero-section {
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  animation: zoomInOut 5s ease-in infinite;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+  color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: black;
 }
