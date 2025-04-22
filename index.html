@@ -27,8 +27,8 @@
     <div class="home">
       <!-- Header/Navbar -->
       <header class="position-relative z-3">
-        <nav class="navbar navbar-expand-lg shadow-sm px-lg-5">
-          <div class="container-fluid px-lg-5">
+        <nav class="navbar navbar-expand-lg shadow-sm ">
+          <div class="container ">
             <!-- زر القائمة للموبايل -->
             <a class="navbar-brand mx-4 d-lg-none" href="./index.html">
               <img src="../images/logo.png" height="80" alt="BamBoho" />
@@ -172,10 +172,13 @@
       </div>
     </div>
     <!-- About Us -->
-    <section class="py-5 bg-white px-lg-5">
-      <div class="container-fluid px-lg-5 py-5">
+    <section class="py-5 bg-white ">
+      <div class="container py-5">
         <div class="row align-items-center gx-lg-5">
-          <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1000">
+          <div class="col-md-6 mb-4 mb-md-0 position-relative" data-aos="fade-right" data-aos-duration="1000">
+            <div
+            class="bg-img bg-body-tertiary position-absolute z-n1 rounded-3 d-none d-md-block"
+          ></div>
             <img
               src="./images/product1.jpg"
               height="550"
@@ -223,7 +226,9 @@
       <img
         src="images/2.jpg"
         alt="Slider 2"
-        class="hero-image "
+        loading="lazy"
+        
+        class="hero-image"
       />
       <div class="hero-content">
         <p class="text-uppercase small ">Our Services</p>
@@ -234,8 +239,8 @@
     </div>
     
     <!-- ################################################################## -->
-    <section class="py-5 text-center px-lg-5">
-      <div class="container-fluid px-lg-5">
+    <section class="py-5 text-center ">
+      <div class="container ">
         <div class="header-text">
         <h2 class="mb-5 fw-bold fs-1" data-aos="fade-up">
           <span class="transparent-text"> Our </span> Featured Products
@@ -318,8 +323,8 @@
     </section>
     <!-- ################################################################## -->
     <!-- BLOG SECTION START -->
-    <section class="py-5 px-lg-5">
-      <div class="container-fluid px-lg-5">
+    <section class="py-5 ">
+      <div class="container ">
       <div class="text-center mb-5" data-aos="fade-up">
         <div class="header-text">
         <h2 class="fw-bold fs-1"> <span class="transparent-text"> Our </span> Blog</h2>
@@ -328,55 +333,82 @@
       <div class="row g-4" data-aos-duration="1500" data-aos="fade-up">
         
         <!-- Blog Item -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 shadow-lg rounded-2">
-            <a href="./assets/blogDetails.html">
-              <img src="./images/1.jpg" class="card-img-top" alt="Image">
-            </a>
+        <div class="col-md-6 col-lg-4">
+          <!-- Blog Post -->
+          <div class="card  blog-card h-100 shadow">
+            <img
+              src="../images/2.jpg"
+              
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
-              <span class="text-muted small d-block mb-2">12 Jun 2022</span>
-              <h5 class="card-title">
-                <a href="./assets/blogDetails.html" class="text-decoration-none text-dark">
-                  How Furniture Is Going To Change Your Business Strategies.
-                </a>
+              <span class="text-muted small d-block text-primary-two">
+                <i class="fa-solid fa-calendar-days me-2 "></i>
+                12 Jun 2022</span>
+              <h5 class="card-title mt-2">
+                <a href="./blogDetails.html"
+                  >How Furniture Is Changing Business Strategies</a
+                >
               </h5>
-              <p class="text-muted small mb-0">by    <a href="./assets/blogDetails.html" class="text-decoration-none">Mary Harper</a></p>
+              <p class="card-text mt-3">
+                Discover how furniture trends can reshape your business
+                approach...
+              </p>
             </div>
           </div>
         </div>
     
         <!-- Blog Item -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 shadow-lg rounded-2">
-            <a href="./assets/blogDetails.html">
-              <img src="./images/1.jpg" class="card-img-top" alt="Image">
-            </a>
+        <div class="col-md-6 col-lg-4">
+          <!-- Blog Post -->
+          <div class="card  blog-card h-100 shadow">
+            <img
+              src="../images/2.jpg"
+              
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
-              <span class="text-muted small d-block mb-2">12 Jun 2022</span>
-              <h5 class="card-title">
-                <a href="./assets/blogDetails.html" class="text-decoration-none text-dark">
-                  Ten Things About Furniture You Have To Experience It Yourself.
-                </a>
+              <span class="text-muted small d-block text-primary-two">
+                <i class="fa-solid fa-calendar-days me-2 "></i>
+                12 Jun 2022</span>
+              <h5 class="card-title mt-2">
+                <a href="./blogDetails.html"
+                  >How Furniture Is Changing Business Strategies</a
+                >
               </h5>
-              <p class="text-muted small mb-0">by    <a href="./assets/blogDetails.html" class="text-decoration-none">Julie Bates</a></p>
+              <p class="card-text mt-3">
+                Discover how furniture trends can reshape your business
+                approach...
+              </p>
             </div>
           </div>
         </div>
     
         <!-- Blog Item -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 border-0 shadow-lg rounded-2">
-            <a href="./assets/blogDetails.html">
-              <img src="./images/1.jpg" class="card-img-top" alt="Image">
-            </a>
+        <div class="col-md-6 col-lg-4">
+          <!-- Blog Post -->
+          <div class="card  blog-card h-100 shadow">
+            <img
+              src="../images/2.jpg"
+              
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
-              <span class="text-muted small d-block mb-2">12 Jun 2022</span>
-              <h5 class="card-title">
-                <a href="./assets/blogDetails.html" class="text-decoration-none text-dark">
-                  10 Moments That Basically Sum Up Your Furniture Experience.
-                </a>
+              <span class="text-muted small d-block text-primary-two">
+                <i class="fa-solid fa-calendar-days me-2 "></i>
+                12 Jun 2022</span>
+              <h5 class="card-title mt-2">
+                <a href="./blogDetails.html"
+                  >How Furniture Is Changing Business Strategies</a
+                >
               </h5>
-              <p class="text-muted small mb-0">by    <a href="./assets/blogDetails.html" class="text-decoration-none">Amy Kelly</a></p>
+              <p class="card-text mt-3">
+                Discover how furniture trends can reshape your business
+                approach...
+              </p>
             </div>
           </div>
         </div>
@@ -385,8 +417,8 @@
     </div>
   </section>
     <!-- ################################################################## -->
-    <section class="py-5  px-lg-5">
-      <div class="container-fluid px-lg-5 py-5">
+    <section class="py-5  ">
+      <div class="container py-5">
         <div class="header-text">
           <h2 class="mb-2 fw-bold fs-1 text-center"  data-aos="fade-up">
             Contact <span class="transparent-text"> US </span>
@@ -398,7 +430,7 @@
             <!-- النموذج -->
             <div class="col-12" data-aos="fade-up" data-aos-duration="1500">
               <div class="row gy-4  mt-4">
-                <div class="col-lg-6 col-12  d-flex flex-column gap-5 mt-5">
+                <div class="col-lg-6 col-12  d-flex flex-column gap-2 ">
                   <p>
                     <i class="fa-solid fa-location-dot me-3 transparent-text fs-4"></i>
                     <a
@@ -492,7 +524,7 @@
     
     </section>
     <!-- ############################################################## -->
-    <footer class="bg-black text-white py-5">
+    <footer class="bg-black text-white pt-5">
       <div class="container">
         <div class="row gy-5  gx-5">
           <div class="col-lg-5">
@@ -506,7 +538,6 @@
               />
             </div>
             <div class="widget mt-3">
-              <h3>About</h3>
               <p class="w-75">
                 At our store, we offer an extensive selection of high-quality
                 furniture pieces that are not only stylish but also built to
@@ -522,7 +553,7 @@
             <div class="widget">
               <h4 class="mb-3">Site sections</h4>
               <ul
-                class="list-links-site list-unstyled float-left links d-flex flex-column gap-4"
+                class="list-links-site list-unstyled float-left links d-flex flex-column gap-2"
               >
                 <li>
                   <i class="fa-solid fa-chevron-right me-2"></i>
@@ -558,10 +589,11 @@
           <div class="col-lg-4 col-md-6">
             <div class="widget-contact">
               <h4 class="mb-3">Contact</h4>
-              <address class="!fs-6 mb-4">
+              <address class="!fs-6 mb-2">
                 <a
                   href="https://maps.app.goo.gl/ar7hyNvY45Ce7kAc9"
                   target="_blank"
+                  class="fs-6"
                 >
                   <i class="fa-solid fa-location-dot me-2"></i>
                   Qarnful Villas, Second New Cairo, Cairo Governorate 4752124
@@ -571,14 +603,15 @@
                 <a
                   href="https://maps.app.goo.gl/LHEbt3g5iG3BMtuQ8"
                   target="_blank"
+                  class="fs-6"
                 >
                   <i class="fa-solid fa-location-dot me-2"></i>
                   In the first gathering next to Dina Farms Pies
                 </a>
               </address>
-              <ul class="list-unstyled links mt-4 fs-5">
+              <ul class="list-unstyled links mt-2 ">
                 <li>
-                  <a href="tel://+201555199540">
+                  <a href="tel://+201555199540"   class="fs-6">
                     <i class="fa-solid fa-phone me-2"></i>
                     +201555199540</a
                   >
@@ -616,8 +649,8 @@
         </div>
         <!-- /.row -->
 
-        <div class="row mt-5">
-          <div class="col-12 text-center">
+        <div class="row ">
+          <div class="col-12 text-center mt-3">
             <p>
               All Rights Reserved BamBoho, Developed and Designed by
               <a class="transparent-text fs-5" href="https://be-group.com/be_en/" target="_blank">BeGroup</a>

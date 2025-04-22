@@ -156,7 +156,6 @@ body {
   background-image: url("../images/wooden-natural-floor-decoration-concept.jpg"); /* نفس الصورة */
   background-size: cover;
   background-position: center;
- 
 
   color: var(--third-color);
   padding: 0.5rem;
@@ -167,7 +166,6 @@ body {
   border: none;
 }
 .social-icon a:hover {
-
   color: var(--third-color);
   font-weight: bold;
   transform: scale(1.11);
@@ -359,13 +357,11 @@ body {
   margin-left: 2px;
 }
 
-/*  */
+/* section product  */
 .product {
   transition: all 0.3s;
   position: relative;
 }
-
-/* Dots Container */
 
 .product .owl-dots button span {
   width: 25px !important;
@@ -384,12 +380,6 @@ body {
   background-color: var(--main-color) !important;
 }
 
-/* .product  .owl-dots button.active span {
-  background-color: var(--main-color) !important;
-}
-.product  .owl-dots button span {
-  background-color: var(--third-color) !important;
-} */
 .product .item {
   padding: 10px;
 }
@@ -408,14 +398,14 @@ body {
 .product-img {
   object-fit: cover !important;
   width: 100%;
-  height: 450px;
+  height: 300px;
   border-radius: 10px 10px 0 0;
 }
 .product-card h5 {
   padding: 15px 0;
 }
 
-/*  */
+/* section product details */
 .nav-tabs .nav-link.active {
   color: var(--main-color);
   border-color: transparent transparent var(--main-color) transparent;
@@ -503,27 +493,6 @@ body {
   border-radius: 10px;
 }
 
-/* Footer  */
-footer .list-links-site li {
-  transition: all 0.3s;
-  cursor: pointer;
-  width: fit-content;
-}
-footer .list-links-site li i {
-  font-size: 15px;
-}
-footer .list-links-site li:hover {
-  transform: translateX(10px);
-}
-
-footer .widget-contact i{
-  background-image: url("../images/wooden-natural-floor-decoration-concept.jpg"); /* نفس الصورة */
-  background-size: cover;
-  background-position: center;
-  color: transparent;
-  -webkit-background-clip: text;
-    background-clip: text;
-}
 /* about */
 .bg-img {
   top: 40%;
@@ -533,7 +502,7 @@ footer .widget-contact i{
   transform: translate(-50%, -50%);
   background-color: var(--fifty-color) !important;
 }
-.bg-img-two{
+.bg-img-two {
   top: 40%;
   left: 55%;
   width: 100%;
@@ -541,6 +510,7 @@ footer .widget-contact i{
   transform: translate(-50%, -50%);
   background-color: var(--fifty-color) !important;
 }
+
 /* testimonials */
 .testimonials .item img {
   width: 80px;
@@ -589,4 +559,39 @@ footer .widget-contact i{
 .testimonials .arrow-right:hover {
   background-color: white;
   color: var(--main-color);
+}
+
+/* blog */
+.card-img-top {
+  object-fit: cover;
+  height: 250px;
+}
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Footer  */
+footer .list-links-site li {
+  transition: all 0.3s;
+  cursor: pointer;
+  width: fit-content;
+}
+footer .list-links-site li i {
+  font-size: 15px;
+}
+footer .list-links-site li:hover {
+  transform: translateX(10px);
+}
+
+footer .widget-contact i {
+  background-image: url("../images/wooden-natural-floor-decoration-concept.jpg"); /* نفس الصورة */
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
