@@ -27,19 +27,12 @@
     <div class="home">
       <!-- Header/Navbar -->
       <header class="position-relative z-3">
-        <nav
-          class="navbar navbar-expand-lg shadow-sm"
-        >
+        <nav class="navbar navbar-expand-lg shadow-sm">
           <div class="container">
-            <!-- الشعار -->
-            <a class="navbar-brand" href="./index.html">
-              <img src="images/logo.png" 
-             
-              height="100"
-           alt="BamBoho" />
-            </a>
-
             <!-- زر القائمة للموبايل -->
+            <a class="navbar-brand mx-4 d-lg-none" href="./index.html">
+              <img src="images/logo.png" height="80" alt="BamBoho" />
+            </a>
             <button
               class="navbar-toggler shadow-none border-0"
               type="button"
@@ -49,41 +42,48 @@
             >
               <i class="fa-solid fa-bars fs-3"></i>
             </button>
-
+        
             <!-- قائمة أفقية في الشاشات الكبيرة -->
             <div
               class="collapse navbar-collapse d-none d-lg-flex justify-content-between align-items-center w-100"
             >
-              <ul class="navbar-nav mx-auto d-flex gap-4 align-items-center">
+              <!-- روابط يسار الشعار -->
+              <ul class="navbar-nav d-flex gap-4 align-items-center">
                 <li class="nav-item">
                   <a class="nav-link active" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./assets/about.html">About Us</a>
                 </li>
-
                 <li class="nav-item">
                   <a class="nav-link" href="./assets/services.html">Services</a>
                 </li>
-                <li>
-                  <a class="nav-link" href="./assets/ourProducts.html"
-                    >Products</a
-                  >
+              </ul>
+        
+              <!-- الشعار في المنتصف -->
+              <a class="navbar-brand mx-4" href="./index.html">
+                <img src="images/logo.png" height="80" alt="BamBoho" />
+              </a>
+        
+              <!-- روابط يمين الشعار -->
+              <ul class="navbar-nav d-flex gap-5 align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="./assets/ourProducts.html">Products</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./assets/blog.html">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./assets/contact.html"
-                    >Contact Us</a
-                  >
+                  <a class="nav-link" href="./assets/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="lang-btn btn btn-warning text-white px-3 ms-3" href="#">AR</a>
                 </li>
               </ul>
-              <a class="lang-btn btn btn-warning text-white px-3" href="#"
-                >AR</a
-              >
+       
+            
             </div>
-
+        
             <!-- قائمة جانبية للموبايل -->
             <div
               class="offcanvas offcanvas-end d-lg-none"
@@ -91,6 +91,7 @@
               id="mobileMenu"
               aria-labelledby="mobileMenuLabel"
             >
+            
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
                 <button
@@ -107,13 +108,12 @@
                 <a class="nav-link" href="/assets/ourProducts.html">Products</a>
                 <a class="nav-link" href="/assets/blog.html">Blog</a>
                 <a class="nav-link" href="/assets/contact.html">Contact Us</a>
-                <a class="btn btn-send text-white px-3 py-2 mt-3" href="#"
-                  >AR</a
-                >
+                <a class="btn btn-send text-white px-3 py-2 mt-3" href="#">AR</a>
               </div>
             </div>
           </div>
         </nav>
+        
       </header>
 
       <!-- Fullscreen Carousel (behind navbar) -->
@@ -124,7 +124,7 @@
           data-aos-duration="1500"
         >
           <h1 data-aos-anchor-placement="center-center" class="title-text">
-            <span class="fw-medium text-capitalize">Welcome to</span>
+            <span class="fw-bolder text-capitalize">Welcome to</span>
             <span class="fw-bolder">BamBoho</span>
           </h1>
           <p class="mt-4">
@@ -145,25 +145,25 @@
             <div class="overlay"></div>
 
             <img
-              src="images/slider1.jpg"
+              src="images/4.webp"
               alt="Slider 1"
-              class="!object-fit-cover vw-100 vh-100"
+              class="object-fit-cover h-100 w-100"
             />
           </div>
           <div class="item">
             <div class="overlay"></div>
             <img
-              src="images/slider2.jpg"
+              src="images/5.jpg"
               alt="Slider 2"
-              class="!object-fit-cover vw-100 vh-100"
+              class="object-fit-cover h-100 w-100"
             />
           </div>
           <div class="item">
             <div class="overlay"></div>
             <img
-              src="images/slider3.jpg"
+              src="images/6.jpg"
               alt="Slider 3"
-              class="!object-fit-cover vw-100 vh-100"
+              class="object-fit-cover h-100 w-100"
             />
           </div>
         </div>
@@ -182,9 +182,9 @@
             />
           </div>
           <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
-            <h2 class="mb-3 fw-bold">
-              <span class="transparent-text">Why Choose </span> <br />
-              Bamboho
+            <h2 class="mb-3 fw-bold d-grid">
+              <span class="transparent-text mb-2">Why Choose </span> 
+              <span>Bamboho</span>
             </h2>
             <p class="text-muted mb-4">
               At our store, we offer an extensive selection of high-quality
@@ -209,7 +209,7 @@
               </div>
             </div>
 
-            <button class="btn btn-send read-more px-4 py-2">Read More</button>
+            <a href="./assets/about.html" class="btn btn-send read-more px-4 py-2"> Read More</a>
           </div>
         </div>
       </div>
@@ -227,17 +227,18 @@
         <p class="text-uppercase small">Our Services</p>
         <h1 class="display-4 fw-bold">Custom Order</h1>
         <p class="lead">In need of a specific item for your space?</p>
-        <a href="#" class="btn btn-outline-light mt-3">Get in Touch</a>
+        <a href="./assets/services.html" class="btn btn-outline-light mt-3">Get in Touch</a>
       </div>
     </div>
     
     <!-- ################################################################## -->
     <section class="py-5 text-center px-lg-5">
       <div class="container-fluid px-lg-5">
+        <div class="header-text">
         <h2 class="mb-5 fw-bold fs-1" data-aos="fade-up">
           <span class="transparent-text"> Our </span> Featured Products
         </h2>
-
+      </div>
         <div
           class="owl-carousel product owl-theme h-100 w-100"
           data-aos="fade-up"
@@ -313,12 +314,14 @@
         >
       </div>
     </section>
+    <!-- ################################################################## -->
     <!-- BLOG SECTION START -->
     <section class="py-5 px-lg-5">
       <div class="container-fluid px-lg-5">
       <div class="text-center mb-5" data-aos="fade-up">
-       
-        <h2 class="fw-bold"> <span class="transparent-text"> Our </span> Blog</h2>
+        <div class="header-text">
+        <h2 class="fw-bold fs-1"> <span class="transparent-text"> Our </span> Blog</h2>
+      </div>
       </div>
       <div class="row g-4" data-aos-duration="1500" data-aos="fade-up">
         
@@ -331,11 +334,11 @@
             <div class="card-body">
               <span class="text-muted small d-block mb-2">12 Jun 2022</span>
               <h5 class="card-title">
-                <a href="#" class="text-decoration-none text-dark">
+                <a href="./assets/blogDetails.html" class="text-decoration-none text-dark">
                   How Furniture Is Going To Change Your Business Strategies.
                 </a>
               </h5>
-              <p class="text-muted small mb-0">by <a href="#" class="text-decoration-none">Mary Harper</a></p>
+              <p class="text-muted small mb-0">by    <a href="./assets/blogDetails.html" class="text-decoration-none">Mary Harper</a></p>
             </div>
           </div>
         </div>
@@ -349,11 +352,11 @@
             <div class="card-body">
               <span class="text-muted small d-block mb-2">12 Jun 2022</span>
               <h5 class="card-title">
-                <a href="#" class="text-decoration-none text-dark">
+                <a href="./assets/blogDetails.html" class="text-decoration-none text-dark">
                   Ten Things About Furniture You Have To Experience It Yourself.
                 </a>
               </h5>
-              <p class="text-muted small mb-0">by <a href="#" class="text-decoration-none">Julie Bates</a></p>
+              <p class="text-muted small mb-0">by    <a href="./assets/blogDetails.html" class="text-decoration-none">Julie Bates</a></p>
             </div>
           </div>
         </div>
@@ -367,11 +370,11 @@
             <div class="card-body">
               <span class="text-muted small d-block mb-2">12 Jun 2022</span>
               <h5 class="card-title">
-                <a href="#" class="text-decoration-none text-dark">
+                <a href="./assets/blogDetails.html" class="text-decoration-none text-dark">
                   10 Moments That Basically Sum Up Your Furniture Experience.
                 </a>
               </h5>
-              <p class="text-muted small mb-0">by <a href="#" class="text-decoration-none">Amy Kelly</a></p>
+              <p class="text-muted small mb-0">by    <a href="./assets/blogDetails.html" class="text-decoration-none">Amy Kelly</a></p>
             </div>
           </div>
         </div>
@@ -381,15 +384,18 @@
   </section>
     <!-- ################################################################## -->
     <section class="py-5  px-lg-5">
-      <div class="container-fluid px-lg-5">
-        <h2 class="mb-2 fw-bold fs-1 text-center" data-aos="fade-up">
-          Contact <span class="transparent-text"> US </span>
-        </h2>
+      <div class="container-fluid px-lg-5 py-5">
+        <div class="header-text">
+          <h2 class="mb-2 fw-bold fs-1 text-center"  data-aos="fade-up">
+            Contact <span class="transparent-text"> US </span>
+          </h2>
+        </div>
+      
         <form action="#" class="pt-2">
-          <div class="row">
+          <div class="row ">
             <!-- النموذج -->
             <div class="col-12" data-aos="fade-up" data-aos-duration="1500">
-              <div class="row gy-4 mt-4">
+              <div class="row gy-4  mt-4">
                 <div class="col-6 d-flex flex-column gap-5 mt-5">
                   <p>
                     <i class="fa-solid fa-location-dot me-3 text-primary-two"></i>
@@ -475,12 +481,12 @@
     <!-- ############################################################## -->
     <footer class="bg-black text-white py-5">
       <div class="container">
-        <div class="row">
+        <div class="row gy-5  gx-5">
           <div class="col-lg-5">
             <div class="widget mt-0">
               <img
-                src="./images/logo dark.jpg"
-                class="object-fit-cover"
+                src="../images/logo dark.jpg"
+                class="object-fit-cover mt-0"
                 width="150"
                 height="150"
                 alt=""
@@ -489,7 +495,9 @@
             <div class="widget mt-3">
               <h3>About</h3>
               <p class="w-75">
-                At our store, we offer an extensive selection of high-quality furniture pieces that are not only stylish but also built to last.
+                At our store, we offer an extensive selection of high-quality
+                furniture pieces that are not only stylish but also built to
+                last.
               </p>
             </div>
 
@@ -497,24 +505,35 @@
           </div>
           <!-- /.col-lg-3 -->
 
-          <div class="col-lg-3 ml-auto">
+          <div class="col-lg-3 col-md-6 ml-auto">
             <div class="widget">
-              <h3>Site sections</h3>
+              <h4 class="mb-3">Site sections</h4>
               <ul
-                class="list-unstyled float-left links d-flex flex-column gap-3"
+                class="list-links-site list-unstyled float-left links d-flex flex-column gap-4"
               >
-                <li><a href="index.html">Home</a></li>
                 <li>
+                  <i class="fa-solid fa-chevron-right me-2"></i>
+                  <a href="./index.html">Home</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right me-2"></i>
                   <a href="./assets/about.html">About Us</a>
                 </li>
                 <li>
+                  <i class="fa-solid fa-chevron-right me-2"></i>
                   <a href="./assets/services.html">Services</a>
                 </li>
                 <li>
+                  <i class="fa-solid fa-chevron-right me-2"></i>
                   <a href="./assets/ourProducts.html">Products</a>
                 </li>
-                <li><a href="./assets/blog.html">Blog</a></li>
+
                 <li>
+                  <i class="fa-solid fa-chevron-right me-2"></i>
+                  <a href="./assets/blog.html">Blog</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right me-2"></i>
                   <a href="./assets/contact.html">Contact Us</a>
                 </li>
               </ul>
@@ -523,18 +542,37 @@
           </div>
           <!-- /.col-lg-3 -->
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-6">
             <div class="widget">
-              <h3>Contact</h3>
-              <address class="!fs-6">
-                Qarnful Villas, Second New Cairo, Cairo Governorate 4752124
+              <h4 class="mb-3">Contact</h4>
+              <address class="!fs-6 mb-4">
+                <a
+                  href="https://maps.app.goo.gl/ar7hyNvY45Ce7kAc9"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-location-dot me-2"></i>
+                  Qarnful Villas, Second New Cairo, Cairo Governorate 4752124
+                </a>
               </address>
-              <address>In the first gathering next to Dina Farms Pies</address>
-              <ul class="list-unstyled links mb-4 fs-5">
-                <li><a href="tel://+201555199540">+201555199540</a></li>
+              <address>
+                <a
+                  href="https://maps.app.goo.gl/LHEbt3g5iG3BMtuQ8"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-location-dot me-2"></i>
+                  In the first gathering next to Dina Farms Pies
+                </a>
+              </address>
+              <ul class="list-unstyled links mt-4 fs-5">
+                <li>
+                  <a href="tel://+201555199540">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    +201555199540</a
+                  >
+                </li>
               </ul>
               <div class="widget mt-5">
-                <h3>Connect with us</h3>
+                <h4>Connect with us</h4>
                 <ul
                   class="list-unstyled social d-flex align-items-center gap-3 mt-4"
                 >
@@ -576,7 +614,7 @@
       </div>
       <!-- /.container -->
     </footer>
-    <!-- /.site-footer -->
+
     <!-- ############################################################## -->
     <!-- Social Icons -->
     <div
@@ -590,22 +628,7 @@
       >
         <i class="fas fa-phone text-white"></i>
       </a>
-      <a
-        href="https://www.facebook.com/bambohoegy"
-        target="_blank"
-        class="btn btn-primary d-flex align-items-center justify-content-center rounded-3"
-        style="width: 40px; height: 40px"
-      >
-        <i class="fab fa-facebook-f text-white"></i>
-      </a>
-      <a
-        class="btn btn-primary d-flex align-items-center justify-content-center rounded-3"
-        style="width: 40px; height: 40px"
-        href="https://www.instagram.com/bambohoegy?igsh=emlpbXNvN2xwMXY2&utm_source=qr"
-        target="_blank"
-      >
-        <i class="fab fa-instagram text-white"></i>
-      </a>
+    
       <a
         href="http://wa.me/201555199540"
         target="_blank"
