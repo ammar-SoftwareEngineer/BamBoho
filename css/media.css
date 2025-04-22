@@ -29,7 +29,7 @@
     -webkit-background-clip: text;
     background-clip: text;
   }
-  .header-text h2 {
+  .hero-content h2 {
     font-size: 40px !important;
   }
 }
@@ -76,10 +76,13 @@
   .header-text h2 {
     font-size: 35px !important;
   }
-  .hero-slider-pages h1{
+  .hero-slider-pages h1 {
     text-align: center;
     font-size: 2.5rem !important;
     width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 40px;
   }
 }
 
@@ -103,4 +106,5 @@
   .header-text h2 {
     font-size: 40px !important;
   }
+
 }
