@@ -72,7 +72,9 @@ body {
   overflow: hidden;
   transition: height 0.3s ease-in-out;
 }
+.navbar-brand {
 
+}
 .nav-item {
   position: relative;
 }
@@ -512,6 +514,14 @@ footer .list-links-site li:hover {
   transform: translateX(10px);
 }
 
+footer .widget-contact i{
+  background-image: url("../images/wooden-natural-floor-decoration-concept.jpg"); /* نفس الصورة */
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+    background-clip: text;
+}
 /* about */
 .bg-img {
   top: 40%;

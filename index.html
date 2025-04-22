@@ -27,11 +27,11 @@
     <div class="home">
       <!-- Header/Navbar -->
       <header class="position-relative z-3">
-        <nav class="navbar navbar-expand-lg shadow-sm">
-          <div class="container">
+        <nav class="navbar navbar-expand-lg shadow-sm px-lg-5">
+          <div class="container-fluid px-lg-5">
             <!-- زر القائمة للموبايل -->
             <a class="navbar-brand mx-4 d-lg-none" href="./index.html">
-              <img src="images/logo.png" height="80" alt="BamBoho" />
+              <img src="../images/logo.png" height="80" alt="BamBoho" />
             </a>
             <button
               class="navbar-toggler shadow-none border-0"
@@ -42,13 +42,15 @@
             >
               <i class="fa-solid fa-bars fs-3"></i>
             </button>
-        
+
             <!-- قائمة أفقية في الشاشات الكبيرة -->
             <div
               class="collapse navbar-collapse d-none d-lg-flex justify-content-between align-items-center w-100"
             >
               <!-- روابط يسار الشعار -->
-              <ul class="navbar-nav d-flex gap-4 align-items-center">
+              <ul
+                class="navbar-nav w-100 d-flex gap-5 align-items-center justify-content-start"
+              >
                 <li class="nav-item">
                   <a class="nav-link active" href="./index.html">Home</a>
                 </li>
@@ -59,14 +61,19 @@
                   <a class="nav-link" href="./assets/services.html">Services</a>
                 </li>
               </ul>
-        
+
               <!-- الشعار في المنتصف -->
-              <a class="navbar-brand mx-4" href="./index.html">
-                <img src="images/logo.png" height="80" alt="BamBoho" />
+              <a
+                class="navbar-brand d-flex justify-content-center w-100 gap-5 align-items-center"
+                href="./index.html"
+              >
+                <img src="./images/logo.png" height="80" alt="BamBoho" />
               </a>
-        
+
               <!-- روابط يمين الشعار -->
-              <ul class="navbar-nav d-flex gap-5 align-items-center">
+              <ul
+                class="navbar-nav d-flex w-100 gap-5 align-items-center justify-content-end"
+              >
                 <li class="nav-item">
                   <a class="nav-link" href="./assets/ourProducts.html">Products</a>
                 </li>
@@ -77,13 +84,11 @@
                   <a class="nav-link" href="./assets/contact.html">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="lang-btn btn btn-warning text-white px-3 ms-3" href="#">AR</a>
+                  <a class="lang-btn btn text-white px-3" href="#">AR</a>
                 </li>
               </ul>
-       
-            
             </div>
-        
+
             <!-- قائمة جانبية للموبايل -->
             <div
               class="offcanvas offcanvas-end d-lg-none"
@@ -91,7 +96,6 @@
               id="mobileMenu"
               aria-labelledby="mobileMenuLabel"
             >
-            
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
                 <button
@@ -102,13 +106,15 @@
                 ></button>
               </div>
               <div class="offcanvas-body d-flex flex-column gap-3">
-                <a class="nav-link active" href="index.html">Home</a>
-                <a class="nav-link" href="/assets/about.html">About Us</a>
-                <a class="nav-link" href="/assets/services.html">Services</a>
-                <a class="nav-link" href="/assets/ourProducts.html">Products</a>
-                <a class="nav-link" href="/assets/blog.html">Blog</a>
-                <a class="nav-link" href="/assets/contact.html">Contact Us</a>
-                <a class="btn btn-send text-white px-3 py-2 mt-3" href="#">AR</a>
+                <a class="nav-link active" href="./index.html">Home</a>
+                <a class="nav-link" href="./assets/about.html">About Us</a>
+                <a class="nav-link" href="./assets/services.html">Services</a>
+                <a class="nav-link" href="./assets/ourProducts.html">Products</a>
+                <a class="nav-link" href="./assets/blog.html">Blog</a>
+                <a class="nav-link" href="./assets/contact.html">Contact Us</a>
+                <a class="btn btn-send text-white px-3 py-2 mt-3" href="#"
+                  >AR</a
+                >
               </div>
             </div>
           </div>
@@ -399,19 +405,30 @@
                 <div class="col-6 d-flex flex-column gap-5 mt-5">
                   <p>
                     <i class="fa-solid fa-location-dot me-3 text-primary-two"></i>
-                 
-                    Qarnful Villas, Second New Cairo, Cairo Governorate 4752124</span
+                    <a
+                    href="https://maps.app.goo.gl/ar7hyNvY45Ce7kAc9"
+                    target="_blank"
+                  >
+                    Qarnful Villas, Second New Cairo, Cairo Governorate 4752124</a
                     >
                   </p>
                   <p>
-                    <i class="fa-solid fa-location-dot me-3 text-primary-two"></i><span>
-                      In the first gathering next to Dina Farms Pies</span
+                    <i class="fa-solid fa-location-dot me-3 text-primary-two"></i> <a
+                    href="https://maps.app.goo.gl/LHEbt3g5iG3BMtuQ8"
+                    target="_blank"
+                  >
+                      In the first gathering next to Dina Farms Pies</a
                     >
                   </p>
 
                   <p>
-                    <i class="fa-solid fa-phone me-3 text-primary-two"></i><span>Phone : +201555199540</span>
+                    <i class="fa-solid fa-phone me-3 text-primary-two"></i><a
+                    href="tel:+201555199540">Phone : +201555199540</a>
                   </p>
+                  <p>
+                    <i class="fa-solid fa-envelope me-3 text-primary-two"></i><span>Email : infoBamboho@mail.com</span>
+                  </p>
+                 
                 </div>
                 <div class="col-12 col-md-12 col-lg-6 mb-5">
                   <div class="d-flex gap-3 w-100">
@@ -543,7 +560,7 @@
           <!-- /.col-lg-3 -->
 
           <div class="col-lg-4 col-md-6">
-            <div class="widget">
+            <div class="widget-contact">
               <h4 class="mb-3">Contact</h4>
               <address class="!fs-6 mb-4">
                 <a
