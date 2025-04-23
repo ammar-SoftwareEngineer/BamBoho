@@ -487,9 +487,9 @@ height: 100%;
 .bg-img {
   top: 43%;
   left: 43%;
-  width: 90%;
-  height: 100%;
-  transform: translate(-50%, -50%);
+  width: 90% !important;
+  height: 100% !important;
+  transform: translate(-50%, -50%) !important;
   background-color: var(--fifty-color) !important;
 }
 .bg-img-two {
