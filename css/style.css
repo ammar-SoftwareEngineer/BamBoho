@@ -18,9 +18,12 @@ a {
 body {
   font-family: "Cairo", sans-serif;
   font-size: 1.2rem;
+
+}
+html,body{
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
 .text-xl {
   font-size: 8rem;
 }
