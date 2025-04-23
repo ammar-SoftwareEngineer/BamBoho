@@ -75,7 +75,7 @@ $(".stop").on("click", function () {
     });
   });
 
-
+// Wow js  libary
 
 
 let imageURL = "";
